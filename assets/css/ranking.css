@@ -1,5 +1,5 @@
 :root {
-  --background-color: #009879;
+  --background-color: var(--background-color);
   --blue-high: #225788;
   --green: #15e6cd;
   --green-high: #43ff52;
