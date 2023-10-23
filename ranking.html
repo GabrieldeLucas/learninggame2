@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="C:\Users\luize\OneDrive\Área de Trabalho\VScode\Gaming 'n Learning\Site\carousel\carousel.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/ranking.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script src="assets/js/header.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <p class="logo">Gaming N' Learning</p>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="pushcraft.html">PushCraft</a>
+          <a href="users.html">Users</a>
+          <a href="ranking.html">Ranking</a>
+          <a href="creditos.html">Credits</a>
+        </nav>
+        <a class="burger-menu" href="#login-blur">
+          <img src="https://cdn-icons-png.flaticon.com/512/5509/5509636.png" width="40px" style="filter: invert(100%);">
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="ranking-wrapper">
+        <div class="st-place">
+          <div class="place">
+            <img
+              src="https://images.emojiterra.com/google/android-12l/512px/1f947.png"
+            />
+          </div>
+          <div class="st-pfp">
+            <img
+              src="data:image/png;base64,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"
+              class="st-pfp"
+            />
+          </div>
+          <p class="name">Carlão da gameplay</p>
+          <p>Jogador</p>
+          <p class="score">2481744</p>
+          <a>See profile</a>
+        </div>
+        <div class="rank">
+            <div class="nth-place">
+              <div class="place">
+                <img
+                  src="https://images.emojiterra.com/google/android-12l/512px/1f948.png"
+                />
+              </div>
+              <div class="nth-pfp">
+                <img
+                  src="https://pbs.twimg.com/media/CNJlJDEWgAAsF56.png"
+                />
+              </div>
+              <div class="nth-info">
+                <p class="name">Kiyoshito games</p>
+                <p class="role">Jogador</p>
+              </div>
+              <a>See profile</a>
+              <p class="score">2324729</p>
+            </div>
+
+            <div class="nth-place">
+              <div class="place">
+                <img
+                  src="https://images.emojiterra.com/google/android-12l/512px/1f949.png"
+                />
+              </div>
+              <div class="nth-pfp">
+                <img
+                  src="https://images.emojiterra.com/twitter/v14.0/128px/1f614.png"
+                />
+              </div>
+              <div class="nth-info">
+                <p class="name">Vitzz</p>
+                <p class="role">Jogador</p>
+              </div>
+              <a>See profile</a>
+              <p class="score">1904030</p>
+            </div>
+            <div class="nth-place">
+              <div class="place">
+                <p>4°</p>
+              </div>
+              <div class="nth-pfp">
+                <img
+                  src="https://images.emojiterra.com/twitter/v14.0/128px/1f604.png"
+                />
+              </div>
+              <div class="nth-info">
+                <p class="name">Kaio123 jogos</p>
+                <p class="role">Jogador</p>
+              </div>
+              <a>See profile</a>
+              <p class="score">1834930</p>
+            </div>
+            <div class="nth-place">
+              <div class="place">
+                <p>5°</p>
+              </div>
+              <div class="nth-pfp">
+                <img
+                  src="https://images.emojiterra.com/twitter/v14.0/128px/1f60e.png"
+                />
+              </div>
+              <div class="nth-info">
+                <p class="name">RitaLitorando</p>
+                <p class="role">Jogador</p>
+              </div>
+              <a>See profile</a>
+              <p class="score">178099
+              </p>
+            </div>
+            <div class="nth-place">
+              <div class="place">
+                <p>6°</p>
+              </div>
+              <div class="nth-pfp">
+                <img
+                  src="https://images.emojiterra.com/twitter/v14.0/128px/1f624.png"
+                />
+              </div>
+              <div class="nth-info">
+                <p class="name">RomeuAfecto</p>
+                <p class="role">Jogador</p>
+              </div>
+              <a>See profile</a>
+              <p class="score">1623</p>
+            </div>
+            <div class="nth-place">
+              <div class="place">
+              <p>7°</p>
+              </div>
+              <div class="nth-pfp">
+                <img
+                  src="https://images.emojiterra.com/twitter/v14.0/512px/1f609.png"
+                />
+              </div>
+              <div class="nth-info">
+                <p class="name">Zezinho gamer</p>
+                <p class="role">Jogador</p>
+              </div>
+              <a>See profile</a>
+              <p class="score">2</p>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>Copyright Gamming 'N Learning © All Rights Reserved</footer>
+    <div id="login-blur">
+      <div class="overflow-handler">
+        <div class="login-wraper">
+          <input type="radio" name="login" id="createAccnt" />
+          <input type="radio" name="login" id="login" />
+          <div class="login-scroll">
+            <form class="login-form" id="login-form">
+              <a class="sair" href="#">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+              <div class="login-top">
+                <h1>Login</h1>
+                <p>ou</p>
+                <label for="createAccnt">Criar conta</label>
+              </div>
+              <fieldset class="inputs-container">
+                <div class="float-label">
+                  <input
+                    name="Usuário"
+                    id="user"
+                    placeholder=" "
+                    required="required"
+                  />
+                  <label for="user">Usuário</label>
+                </div>
+                <div class="float-label">
+                  <input
+                    name="Senha"
+                    id="password"
+                    placeholder=" "
+                    required="required"
+                  />
+                  <label for="password">Senha</label>
+                  <input type="checkbox" id="showPassword" onclick="" checked />
+                  <label
+                    for="showPassword"
+                    class="showPassword"
+                    onclick="showPsswrd()"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </label>
+                </div>
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="a"
+                  style="margin: auto auto; scale: 0.9"
+                ></div>
+              </fieldset>
+              <div class="buttons">
+                <a
+                  href="#"
+                  style="font-size: 20px; width: 100px; text-align: center"
+                  >Recuperar senha</a
+                >
+                <button
+                  class="buttonEnabled"
+                  id="submit"
+                  type="submit"
+                  disabled="disabled"
+                >
+                  Entrar
+                </button>
+              </div>
+              <script src="assets/js/login.js"></script>
+            </form>
+            <form class="createAccnt">
+              <div class="login-top">
+                <h1>Criar conta</h1>
+                <label for="login">Voltar</label>
+              </div>
+              <div class="overflow">
+                <fieldset class="inputs-container">
+                  <div class="float-label">
+                    <input
+                      name="Usuário"
+                      id="user"
+                      placeholder=" "
+                      required="required"
+                    />
+                    <label for="user">Usuário</label>
+                  </div>
+                  <div class="float-label">
+                    <input
+                      name="Email"
+                      id="email"
+                      placeholder=" "
+                      required="required"
+                    />
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="float-label">
+                    <input
+                      name="Senha"
+                      type="password"
+                      id="password"
+                      placeholder=" "
+                      required="required"
+                    />
+                    <label for="password">Senha</label>
+                    <input
+                      type="checkbox"
+                      id="showPassword"
+                      onclick=""
+                      checked
+                    />
+                    <label
+                      for="showPassword"
+                      class="showPassword"
+                      onclick="showPsswrd()"
+                    >
+                      <span class="material-symbols-outlined">
+                        visibility
+                      </span>
+                    </label>
+                  </div>
+                  <p>Data de Nascimento</p>
+                  <input type="date" id="bDay" required="required"/>
+                  <p>Gênero</p>
+                  <select id="gender" required="required">
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Outro</option>
+                    <option>Prefiro não dizer</option>
+                  </select>
+                  <p>Quais jogos você mais gosta?</p>
+                  <div class="gamesRadio">
+                    <div>
+                      <label>Mundo aberto</label>
+                      <input type="radio" />
+                    </div>
+                    <div>
+                      <label>Sobrevivência</label>
+                      <input type="radio" />
+                    </div>
+                    <div>
+                      <label>First Person Shooters</label>
+                      <input type="radio" />
+                    </div>
+                    <div>
+                      <label>Roleplaying Games</label>
+                      <input type="radio" />
+                    </div>
+                    <div>
+                      <label>Tabuleiro</label>
+                      <input type="radio" />
+                    </div>
+                    <div>
+                      <label>Cartas</label>
+                      <input type="radio" />
+                    </div>
+                  </div>
+                  <button type="submit" class="buttonEnabled">Criar conta</button>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

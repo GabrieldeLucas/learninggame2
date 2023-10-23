@@ -1,0 +1,70 @@
+
+#kiyoshi {
+  display: none;
+  position: absolute;
+  background-image: url(https://matheuskiyoshi.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmemoji.5ba3847f.png&w=384&q=75);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  z-index: 100;
+  animation: slide 5s linear, flap 5s ease;
+}
+
+#kiyoshi::before {
+  content: "";
+  background-image: url(https://static-00.iconduck.com/assets.00/right-wing-emoji-494x512-xzjjsu6b.png);
+  background-position: center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  animation: wing 1s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes flap {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 60px;
+  }
+  50% {
+    top: 0px;
+  }
+  75% {
+    top: 60px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes wing {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}

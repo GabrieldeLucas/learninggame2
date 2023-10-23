@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <!-- <link rel="stylesheet" href="C:\Users\luize\OneDrive\Área de Trabalho\VScode\Gaming 'n Learning\Site\carousel\carousel.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <script src="assets/js/header.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <p class="logo">Gaming N' Learning</p>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="pushcraft.html">PushCraft</a>
+          <a href="users.html">Users</a>
+          <a href="ranking.html">Ranking</a>
+          <a href="creditos.html">Credits</a>
+        </nav>
+        <a class="burger-menu" href="#login-blur">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5509/5509636.png"
+            width="40px"
+            style="filter: invert(100%)"
+          />
+        </a>
+      </div>
+      <br />
+    </header>
+
+    <article>
+      <div id="login-blur">
+        <div class="overflow-handler">
+          <div class="login-wraper">
+            <input type="radio" name="login" id="createAccnt" />
+            <input type="radio" name="login" id="login" />
+            <div class="login-scroll">
+              <form class="login-form" id="login-form">
+                <a class="sair" href="#">
+                  <i class="fa-solid fa-xmark"></i>
+                </a>
+                <div class="login-top">
+                  <h1>Login</h1>
+                  <p>ou</p>
+                  <label for="createAccnt">Criar conta</label>
+                </div>
+                <fieldset class="inputs-container">
+                  <div class="float-label">
+                    <input
+                      name="Usuário"
+                      id="user"
+                      placeholder=" "
+                      required="required"
+                    />
+                    <label for="user">Usuário</label>
+                  </div>
+                  <div class="float-label">
+                    <input
+                      name="Senha"
+                      id="password"
+                      placeholder=" "
+                      required="required"
+                    />
+                    <label for="password">Senha</label>
+                    <input
+                      type="checkbox"
+                      id="showPassword"
+                      onclick=""
+                      checked
+                    />
+                    <label
+                      for="showPassword"
+                      class="showPassword"
+                      onclick="showPsswrd()"
+                    >
+                      <span class="material-symbols-outlined">
+                        visibility
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="a"
+                    style="margin: auto auto; scale: 0.9"
+                  ></div>
+                </fieldset>
+                <div class="buttons">
+                  <a
+                    href="#"
+                    style="font-size: 20px; width: 100px; text-align: center"
+                    >Recuperar senha</a
+                  >
+                  <button
+                    class="buttonEnabled"
+                    id="submit"
+                    type="submit"
+                    disabled="disabled"
+                  >
+                    Entrar
+                  </button>
+                </div>
+                <script src="assets/js/login.js"></script>
+              </form>
+              <form class="createAccnt">
+                <div class="login-top">
+                  <h1>Criar conta</h1>
+                  <label for="login">Voltar</label>
+                </div>
+                <div class="overflow">
+                  <fieldset class="inputs-container">
+                    <div class="float-label">
+                      <input
+                        name="Usuário"
+                        id="user"
+                        placeholder=" "
+                        required="required"
+                      />
+                      <label for="user">Usuário</label>
+                    </div>
+                    <div class="float-label">
+                      <input
+                        name="Email"
+                        id="email"
+                        placeholder=" "
+                        required="required"
+                      />
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="float-label">
+                      <input
+                        name="Senha"
+                        type="password"
+                        id="password"
+                        placeholder=" "
+                        required="required"
+                      />
+                      <label for="password">Senha</label>
+                      <input
+                        type="checkbox"
+                        id="showPassword"
+                        onclick=""
+                        checked
+                      />
+                      <label
+                        for="showPassword"
+                        class="showPassword"
+                        onclick="showPsswrd()"
+                      >
+                        <span class="material-symbols-outlined">
+                          visibility
+                        </span>
+                      </label>
+                    </div>
+                    <p>Data de Nascimento</p>
+                    <input type="date" id="bDay" required="required" />
+                    <p>Gênero</p>
+                    <select id="gender" required="required">
+                      <option>Masculino</option>
+                      <option>Feminino</option>
+                      <option>Outro</option>
+                      <option>Prefiro não dizer</option>
+                    </select>
+                    <p>Quais jogos você mais gosta?</p>
+                    <div class="gamesRadio">
+                      <div>
+                        <label>Mundo aberto</label>
+                        <input type="checkbox" />
+                      </div>
+                      <div>
+                        <label>Sobrevivência</label>
+                        <input type="checkbox" />
+                      </div>
+                      <div>
+                        <label>First Person Shooters</label>
+                        <input type="checkbox" />
+                      </div>
+                      <div>
+                        <label>Roleplaying Games</label>
+                        <input type="checkbox" />
+                      </div>
+                      <div>
+                        <label>Tabuleiro</label>
+                        <input type="checkbox" />
+                      </div>
+                      <div>
+                        <label>Cartas</label>
+                        <input type="checkbox" />
+                      </div>
+                    </div>
+                    <button type="submit" class="buttonEnabled">
+                      Criar conta
+                    </button>
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script
+        src="https://kit.fontawesome.com/1f26d42d2c.js"
+        crossorigin="anonymous"
+      ></script>
+          <center>
+            <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-X1m7tf9cRQ?si=uo6G2-FJ3dSj7dRr"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          </center>
+         
+      <section>
+        <img
+          src="https://em-content.zobj.net/source/microsoft-teams/363/white-question-mark_2754.png"
+        />
+        <div class="secContent">
+          <h2>O que é</h2>
+          <p>
+            O nosso site oferece jogos que tem o intuito de desenvolver as
+            habilidades cognitivas dos jogadores e incentivá-los a usar o
+            cérebro de maneiras não convencionais.
+          </p>
+          <p>
+            Acreditamos que combinados entre si, os jogos podem garantir
+            situações significativas de aprendizagem, favorecendo o
+            desenvolvimento cognitivo e social da criança. Em grupo, os jogos
+            também podem contribuir para desenvolver a solidariedade e a
+            cooperação. Os jogos e as brincadeiras ajudam as crianças a
+            vivenciarem regras preestabelecidas.
+          </p>
+        </div>
+      </section>
+      <hr class="spacer" />
+      <section style="justify-content: left">
+        <div class="secContent">
+          <h2>Qual é nossa missão?</h2>
+          <p>
+            O nosso site oferece jogos que tem o intuito de desenvolver as
+            habilidades cognitivas dos jogadores e incentivá-los a usar o
+            cérebro de maneiras não convencionais.
+          </p>
+          <p>
+            Acreditamos que combinados entre si, os jogos podem garantir
+            situações significativas de aprendizagem, favorecendo o
+            desenvolvimento cognitivo e social da criança. Em grupo, os jogos
+            também podem contribuir para desenvolver a solidariedade e a
+            cooperação. Os jogos e as brincadeiras ajudam as crianças a
+            vivenciarem regras preestabelecidas.
+          </p>
+          <p>
+            Jogando a criança experimenta, inventa, descobre, aprende e confere
+            habilidades. Sua inteligência e sua sensibilidade estão sendo
+            desenvolvidas. A qualidade de oportunidades que são oferecidas à
+            criança por meio de jogos garante que suas potencialidades e sua
+            afetividade se harmonizem.
+          </p>
+        </div>
+      </section>
+      <hr class="spacer" />
+      <section>
+        <div class="secContent" style="width: 100%">
+          <h2>História desse método</h2>
+          <p>
+            A utilização dos jogos como ferramenta de aprendizagem, teve seu
+            desenvolvimento nos Estados Unidos, na década de 50, com o propósito
+            de treinar executivos da área financeira. Por consequência dos
+            resultados positivos, seu uso ampliou-se a outras áreas, chegando ao
+            Brasil com muita força na década de 80.
+          </p>
+          <p>
+            Platão, já em meados de 367 a.C., apontou a importância da
+            utilização dos jogos para que o aprendizado das crianças pudesse ser
+            desenvolvido. Afirmava que em seus primeiros anos de vida os meninos
+            e meninas deveriam praticar juntos, atividades educativas através
+            dos jogos.
+          </p>
+        </div>
+      </section>
+      <hr class="spacer" />
+    </article>
+    <footer>
+      <div class="footerLinks">
+        <div class="fLinksBox">
+          <h2>Home</h2>
+          <li><a href="#wlcmcard">Boas-vindas</a></li>
+          <li><a href="#wrldUsers">Usuários pelo mundo</a></li>
+          <li><a href="#yUs">Por que nós?</a></li>
+          <li><a href="#ourGames">Nossos lançamentos</a></li>
+          <li><a href="#popular">Jogos Populares</a></li>
+        </div>
+        <div class="fLinksBox">
+          <h2>About</h2>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+        <div class="fLinksBox">
+          <h2>Pushcraft</h2>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+        <div class="fLinksBox">
+          <h2>Users</h2>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+      </div>
+      <div class="socialMedias"></div>
+      <hr class="spacer" />
+      <p>Copyright Gaming 'N Learning © All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
