@@ -1,0 +1,47 @@
+.users-table {
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0px;
+  font-family: poppins;
+}
+
+h2 {
+  color: #333;
+}
+
+table {
+  position: absolute;
+  top: 160px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+th:not(:first-child){
+  background-color: #009879;
+  color: white;
+  padding: 10px;
+  border: 2px solid rgb(0, 131, 50);
+}
+td:not(:first-child) {
+  padding: 10px;
+  border: 2px solid rgba(151, 151, 151, 0.5);
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:not(:first-child){
+    background-color: #e7e7e7;
+}
+td:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+tr:hover{
+    background-color: rgb(199, 199, 199);
+}
