@@ -75,10 +75,6 @@
   color: blue;
 }
 
-.score::after {
-  content: " Pts";
-}
-
 .st-place a {
   background-color: rgb(0, 0, 214);
   color: white;
